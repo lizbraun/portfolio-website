@@ -27,12 +27,131 @@
         </div>
     </nav>
 
+    <!-- Portfolio Section-->
+    <section id="portfolio" class="container main-section">
+      <div class="portfolio-subheader1">
+        <h3>Drawings</h3>
+      </div>
+
+      <div class="portfolio__project-wrapper row">
+        <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio1">
+            <div class="portfolio__project__preview">
+              <img src="img/bike.jpg" alt="random quotes">
+            </div>
+            <div class="portfolio__project__description">
+              <div class="info-wrapper">
+                <h3 class="portfolio__project__name">Bicycle</h3>
+              </div>
+          </div>
+        </div>
+  
+        <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio2">
+            <div class="portfolio__project__preview">
+              <img src="img/toys.jpg" alt="weather app">
+            </div>
+            <div class="portfolio__project__description">
+              <div class="info-wrapper">
+                <h3 class="portfolio__project__name">Childhood Toys</h3>
+              </div>
+            </div>
+        </div>
+  
+        <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio3">
+            <div class="portfolio__project__preview">
+              <img src="img/dreams.jpg" alt="wikipedia viewer">
+            </div>
+            <div class="portfolio__project__description">
+              <div class="info-wrapper">
+                <h3 class="portfolio__project__name">In My Dreams</h3>
+              </div>
+            </div>
+        </div>
+  
+        <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio4">
+            <div class="portfolio__project__preview">
+              <img src="img/tools.jpg" alt="javascript calculator">
+            </div>
+            <div class="portfolio__project__description">
+              <div class="info-wrapper">
+                <h3 class="portfolio__project__name">Tools</h3>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="drawing-modal">
+    <!-- Modal 1 -->
+    <div id="drawingModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-container">
+                <div class="modal-body">
+                  <h3>Bicycle</h3>
+                  <img src="img/bike.jpg" id="bicycle" alt="">
+                  <p>A realistic pencil drawing that I made in high school of my childhood bike. I worked to make it look as real as possible and 
+                    made sure the lines were extremely straight. I added contrasting shadows and highlights to 
+                    show the metal on the bike and add to the realistic nature.</p>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="drawingModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Button 2 Clicked</h2>
+            </div>
+            <div class="modal-body">
+            <p>A colored pencil drawing of some of my favorite childhood toys. 
+                  </p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="drawingModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Button 2 Clicked</h2>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatum ipsa cum aliquid, ex
+                    inventore, culpa obcaecati modi deleniti enim consequuntur tenetur. Earum numquam sit ratione eum
+                    sequi praesentium, unde maxime ullam iure rem mollitia perferendis eos possimus neque, nisi dicta.
+                    Obcaecati dignissimos, dolores labore rerum quisquam non explicabo repellat!</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
 
  <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="js/main.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
