@@ -15,9 +15,9 @@
     <title>Liz Braun</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
+          <div class="navbar-brand" href="#"> <img src="/logo/small-logo-blue.png" alt="Logo" id="logo"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,29 +39,32 @@
 
     <div class="about-home">
       <h2 class="about-header">About</h2>
-      <p class="about-text">
-        Amet cursus sit amet dictum sit. Eu lobortis elementum nibh tellus 
-        molestie nunc non blandit. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis. Senectus et netus et malesuada. 
-        Proin sed libero enim sed faucibus turpis. Sit amet purus gravida quis. Diam ut venenatis tellus in metus. Erat velit scelerisque 
-        in dictum. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Malesuada fames ac turpis egestas integer eget 
-        aliquet nibh praesent. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Sed arcu non odio euismod lacinia 
-        at quis risus sed. Mi eget mauris pharetra et ultrices neque. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. 
-        Posuere urna nec tincidunt praesent semper feugiat nibh sed. In dictum non consectetur a. Ut etiam sit amet nisl purus in 
-        mollis nunc. Fermentum et sollicitudin ac orci. Arcu non sodales neque sodales ut etiam. Eu non diam phasellus vestibulum 
-        lorem. Nunc sed id semper risus in hendrerit. Eu lobortis elementum nibh tellus molestie nunc non.
-      </p>
+      <div class="about-flex">
+        <img src="/assets/my-pic.png" alt="Picture of Liz" class="about-pic">
+        <div class="about-group">
+           <p class="about-text">
+          Amet cursus sit amet dictum sit. Eu lobortis elementum nibh tellus 
+          molestie nunc non blandit. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis. Senectus et netus et malesuada. 
+          Proin sed libero enim sed faucibus turpis. Sit amet purus gravida quis. Diam ut venenatis tellus in metus. Erat velit scelerisque 
+          in dictum. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Malesuada fames ac turpis egestas integer eget 
+          aliquet nibh praesent. Eu lobortis elementum nibh tellus molestie nunc non.
+          </p>
+          <button class="about-button">More About Me</button>
+        </div>
+       
+      </div>
     </div>
 
     <section id="portfolio" class="container main-section">
       <div class="portfolio-subheader1">
           <h3>Recent Work</h3>
-          <h3>Full Portfolio</h3>
+          <h4"> <a href="portfolio.html" class="full-portfolio-link">Full Portfolio</a></h4>
         </div>
   
         <div class="portfolio__project-wrapper row">
           <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio1">
               <div class="portfolio__project__preview">
-                <img src="img/dmdhub.png" alt="random quotes">
+                <img src="img/dmdhub-edit.png" alt="random quotes">
               </div>
               <div class="portfolio__project__description">
                 <div class="info-wrapper">
@@ -72,7 +75,7 @@
     
           <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio2">
               <div class="portfolio__project__preview">
-                <img src="img/toys.jpg" alt="weather app">
+                <img src="img/bball2.png" alt="weather app">
               </div>
               <div class="portfolio__project__description">
                 <div class="info-wrapper">
@@ -83,11 +86,11 @@
     
           <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio3">
               <div class="portfolio__project__preview">
-                <img src="img/dreams.jpg" alt="wikipedia viewer">
+                <img src="img/CTDA-social-justice.png" alt="wikipedia viewer">
               </div>
               <div class="portfolio__project__description">
                 <div class="info-wrapper">
-                  <h3 class="portfolio__project__name">Levo International</h3>
+                  <h3 class="portfolio__project__name">CTDA Social Justice Collection</h3>
                 </div>
               </div>
           </div>
@@ -105,16 +108,19 @@
               </div>
               <div class="modal-container">
                   <div class="modal-body">
-                    <h3>Bicycle</h3>
-                    <img src="img/bike.jpg" id="bicycle" alt="">
-                    <p>A realistic pencil drawing that I made in high school of my childhood bike. I worked to make it look as real as 
-                      possible and made sure the lines were extremely straight. I added contrasting shadows and highlights to 
-                      show the metal on the bike and add to the realistic nature.</p>
+                    <h3 class="modal-title">DMD Hub</h3>
+                    <img src="img/dmdhub-edit.png" id="modal-img" alt="">
+                    <p class="modal-text">A website made by senior Digital Media and Design students for our 2022 practicum class. The site uses HTML, 
+                      CSS, and Javascript and was created by a group of 6 students over the course of the semester. 
+                      This was made to help DMD students in course selection and overall awareness within the DMD program. 
+                      The site includes offered courses, DMD events, internship/job search, an offered equipment page, 
+                      and a resource page with forms such as applying for graduation and information on plans of study. 
+                      We have designed this site in multiple sprints and worked in an agile environment. 
+                    </p>
+                    <p class="modal-link"> <a href="https://the-nat-attack.github.io/thedmdhub/">Continue to full site</a> </p>
                   </div>
               </div>
               
-              <div class="modal-footer">
-              </div>
           </div>
   
       </div>
@@ -124,18 +130,23 @@
   
           <!-- Modal content -->
           <div class="modal-content">
-              <div class="modal-header">
-                  <span class="close">&times;</span>
-                  <h2>Button 2 Clicked</h2>
-              </div>
-              <div class="modal-body">
-              <p>A colored pencil drawing of some of my favorite childhood toys. 
-                    </p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-container">
+                <div class="modal-body">
+                  <h3 class="modal-title">DMD Hub</h3>
+                  <img src="img/dmdhub-edit.png" id="modal-img" alt="">
+                  <p class="modal-text">I worked in a team to design 30 motion graphics and mockups of 2021-2022 UConn basketball players 
+                    to be displayed on two-story tall LED boards in the Werth Family UConn Basketball Champions Center.
+                    We communicated weekly with UConn clients on zoom or in person, presenting mockups and receiving any feedback.
+                    I worked with a student design team where I embraced teamwork and gained excellent communication skills with my team members and clients.
+                    This experience was in collaboration with UConn senior DMD class Agency. 
+                  </p>
+                </div>
+            </div>
+            
+        </div>
       </div>
   
       <!-- Modal 3 -->
@@ -143,20 +154,27 @@
   
           <!-- Modal content -->
           <div class="modal-content">
-              <div class="modal-header">
-                  <span class="close">&times;</span>
-                  <h2>Button 2 Clicked</h2>
-              </div>
-              <div class="modal-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatum ipsa cum aliquid, ex
-                      inventore, culpa obcaecati modi deleniti enim consequuntur tenetur. Earum numquam sit ratione eum
-                      sequi praesentium, unde maxime ullam iure rem mollitia perferendis eos possimus neque, nisi dicta.
-                      Obcaecati dignissimos, dolores labore rerum quisquam non explicabo repellat!</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-container">
+                <div class="modal-body">
+                  <h3 class="modal-title">DMD Hub</h3>
+                  <div class="modal-flexbox">
+                    <img src="img/CTDA-social-justice.png" id="modal-img" alt="">
+                  <p class="modal-text">A website made by senior Digital Media and Design students for our 2022 practicum class. The site uses HTML, 
+                    CSS, and Javascript and was created by a group of 6 students over the course of the semester. 
+                    This was made to help DMD students in course selection and overall awareness within the DMD program. 
+                    The site includes offered courses, DMD events, internship/job search, an offered equipment page, 
+                    and a resource page with forms such as applying for graduation and information on plans of study. 
+                    We have designed this site in multiple sprints and worked in an agile environment. 
+                  </p>
+                  </div>
+                  <p class="modal-link"> <a href="http://hdl.handle.net/11134/750019:thematic/">Continue to full site</a> </p>
+                </div>
+            </div>
+            
+        </div>
       </div>
     </section>
 
