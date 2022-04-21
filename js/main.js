@@ -1,7 +1,8 @@
+// var for modal
 var datamap = new Map([
-    [document.getElementById("portfolio1"), document.getElementById("drawingModal1")],
-    [document.getElementById("portfolio2"), document.getElementById("drawingModal2")],
-    [document.getElementById("portfolio3"), document.getElementById("drawingModal3")],
+    [document.getElementById("portfolio1"), document.getElementById("homeModal1")],
+    [document.getElementById("portfolio2"), document.getElementById("homeModal2")],
+    [document.getElementById("portfolio3"), document.getElementById("homeModal3")],
 
 ]);
 
@@ -28,3 +29,16 @@ function doModal(anchor, popupbox) {
         }
     });
 }
+
+$(function() {
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "";
+      $(theModal + ' source').attr('src', videoSRCauto);
+      $(theModal + ' video').load();
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' source').attr('src', videoSRC);
+      });
+    });
+  });
