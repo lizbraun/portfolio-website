@@ -9,35 +9,60 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+     <!-- idk what this is but am scared to delete-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Liz Braun</title>
-  </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">  <body>
+    </head>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <div class="navbar-brand" href=""> <img src="./logo/small-logo-blue.png" alt="Logo" id="logo" aria-current="page"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+            <div class="navbar-brand" href=""> <a href="#"> <img src="./logo/small-logo-blue.png" aria-current="page" alt="Logo" id="logo" ></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link nav-link-ltr active" aria-current="page"  href="">Home</a>
-              <a class="nav-link nav-link-ltr" href="#">About</a>
-              <a class="nav-link nav-link-ltr" href="portfolio.html">Portfolio</a>
+             <!-- <a class="nav-link nav-link-ltr " aria-current="page"  href="">Home</a> -->
+              <a class="nav-link nav-link-ltr" id="page-scroll" href="#about-home">About</a>
+              <a class="nav-link nav-link-ltr" id="page-scroll" href="#portfolio">Portfolio</a>
+              <a class="nav-link nav-link-ltr" id="page-scroll" href="#contact">Contact</a>
             </div>
           </div>
         </div>
     </nav>
 
-    <div class="parallax1">
-      <div class="parallax-name">Liz Braun</div>
-      <div class="parallax-info">UI/UX Design | Web Design</div>
+    <div class="parallax-header">
+      <div class="parallax1">
+        <div class="parallax-name">Liz Braun</div>
+        <div class="parallax-info"> Web Design | UI/UX Design</div>
+
+      </div> 
     </div>
 
-    <div class="about-home">
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+
+    <!-- attempt at parallax video
+    <div class="parallax-video">
+        <video autoplay muted loop>
+        <source src="assets/blue-bg.mp4" type="video/mp4">
+        </video>
+        <div class="parallax-text">
+          <div class="parallax-name">Liz Braun</div>
+        <div class="parallax-info">UI/UX Design | Web Design</div>
+        </div>
+      </div> -->
+
+    <div class="about-home" id="about-home">
       <h2 class="about-header">About</h2>
       <div class="about-flex">
         <img src="./assets/my-pic.png" alt="Picture of Liz" class="about-pic">
@@ -48,6 +73,12 @@
           Proin sed libero enim sed faucibus turpis. Sit amet purus gravida quis. Diam ut venenatis tellus in metus. Erat velit scelerisque 
           in dictum. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Malesuada fames ac turpis egestas integer eget 
           aliquet nibh praesent. Eu lobortis elementum nibh tellus molestie nunc non.
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sapien velit, rhoncus nec pharetra non, ultrices sit amet orci. Morbi elementum tristique purus vel pharetra. Suspendisse commodo velit sem, pretium ornare tellus dictum vitae. Pellentesque auctor iaculis urna nec tincidunt. Quisque id hendrerit est. Suspendisse potenti. In volutpat justo lobortis lacus molestie pretium. Vivamus dictum consectetur magna. Sed eu urna erat. Vestibulum feugiat mauris eget elit vestibulum, id mattis erat elementum. Aliquam suscipit id lorem quis fringilla. Sed eget venenatis odio. Morbi condimentum augue et lorem sagittis ultricies. Nullam porta risus sit amet suscipit maximus. Ut eget eros sem.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer blandit, lorem vel tincidunt consectetur, ligula libero malesuada nibh, eu ullamcorper dolor lectus vel ex. Sed molestie elit a est convallis, efficitur finibus risus ornare. Aliquam ultricies libero viverra eleifend lobortis. Donec ac fringilla nulla, vel cursus nibh. Curabitur ligula magna, tincidunt sit amet ante ut, sagittis dictum libero. Aenean ornare posuere lacus id finibus. Curabitur auctor, odio sit amet sagittis fermentum, orci magna rhoncus sem, quis condimentum mauris ipsum vitae odio. Suspendisse ac cursus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas at lobortis ex. Etiam eget vulputate sapien. Phasellus tempor maximus faucibus.
+
+Nam pellentesque facilisis nibh, at pretium turpis bibendum et. Sed nec nisi mauris. Mauris gravida arcu in rutrum auctor. Sed tortor est, sollicitudin nec tempor et, consectetur quis neque. Integer eget est nulla. Sed posuere varius est, quis efficitur libero dapibus in. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit metus lorem, vulputate fringilla nulla varius eget. Nullam at congue eros. Vivamus a elit molestie mauris convallis vestibulum.
           </p>
           <button class="about-button">More About Me</button>
         </div>
@@ -55,47 +86,66 @@
       </div>
     </div>
 
+    <!-- Modal/Portfolio Container-->
+
     <section id="portfolio" class="container main-section">
       <div class="portfolio-subheader1">
           <h3>Recent Work</h3>
-          <h4"> <a href="portfolio.html" class="full-portfolio-link">Full Portfolio</a></h4>
         </div>
   
         <div class="portfolio__project-wrapper row">
           <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio1">
               <div class="portfolio__project__preview">
-                <img src="img/dmdhub-edit.png" alt="random quotes">
+                <img src="img/dmdhub-thumbnail.png" alt="Dmdhub Image">
               </div>
               <div class="portfolio__project__description">
                 <div class="info-wrapper">
                   <h3 class="portfolio__project__name">DMDHub</h3>
+                  <h5 class="portfolio__project__type">Web Design | UI/UX Design</h5>
                 </div>
-            </div>
+              </div>
           </div>
+          
     
           <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio2">
               <div class="portfolio__project__preview">
-                <img src="img/bball2.png" alt="weather app">
+                <img src="img/bball2.png" alt="Champions Hall">
               </div>
               <div class="portfolio__project__description">
                 <div class="info-wrapper">
                   <h3 class="portfolio__project__name">UConn Athletics Champions Hall</h3>
+                  <h5 class="portfolio__project__type">Photoshop/Motion Graphics</h5>
                 </div>
               </div>
           </div>
     
           <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio3">
               <div class="portfolio__project__preview">
-                <img src="img/CTDA-social-justice.png" alt="wikipedia viewer">
+                <img src="img/CTDA-social-justice.png" alt="CTDA Website">
               </div>
               <div class="portfolio__project__description">
                 <div class="info-wrapper">
                   <h3 class="portfolio__project__name">CTDA Social Justice Collection</h3>
+                  <h5 class="portfolio__project__type">Web Design</h5>
+                </div>
+              </div>
+          </div>
+
+          <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio4">
+              <div class="portfolio__project__preview">
+                <img src="img/CTDA-social-justice.png" alt="CTDA Website">
+              </div>
+              <div class="portfolio__project__description">
+                <div class="info-wrapper">
+                  <h3 class="portfolio__project__name">CTDA Social Justice Collection</h3>
+                  <h5 class="portfolio__project__type">Web Design</h5>
                 </div>
               </div>
           </div>
       </div>
     </section>
+
+    <!-- All Modal Information Below -->
   
     <section class="home-modal">
       <!-- Modal 1 -->
@@ -104,22 +154,26 @@
           <!-- Modal content -->
           <div class="modal-content">
               <div class="modal-header">
-                  <span class="close">&times;</span>
+                  <span class="close">X</span>
               </div>
               <div class="modal-container">
                   <div class="modal-body">
-                    <h3 class="modal-title">DMD Hub</h3>
+                    <h1 class="modal-title">DMD Hub</h1>
+                    <h4 class="modal-subtitle">Web Design | UI/UX Design</h4>
                     <div class="modal-flexbox">
-                      <img src="img/dmdhub-edit.png" id="modal-img" alt="">
-                      <p class="modal-text">A website made by senior Digital Media and Design students for our 2022 practicum class. The site uses HTML, 
-                        CSS, and Javascript and was created by a group of 6 students over the course of the semester. 
+                      <img src="img/dmdhub-main.png" id="modal-img" alt="DMD Hub">
+                      <p class="caption1"> DMD Hub home page</p>
+                      <p class="modal-text">DMD Hub made by senior Digital Media and Design students for the UConn Web Design Practicum class. The site uses HTML, 
+                        CSS, Bootstrap, and Javascript and was created by a group of 6 students over the course of the semester. 
                         This was made to help DMD students in course selection and overall awareness within the DMD program. 
-                        The site includes offered courses, DMD events, internship/job search, an offered equipment page, 
+                        The site includes offered courses, DMD events, an internship/job search, an available equipment page, 
                         and a resource page with forms such as applying for graduation and information on plans of study. 
-                        We have designed this site in multiple sprints and worked in an agile environment. 
+                        We designed this site in multiple sprints, worked in an agile environment, and user tested on DMD students and faculty. 
                       </p>
+                      <img src="img/dmdhub-course-edit.png" id="modal-img2" alt="DMD Hub courses">
+                      <p class="caption2"> DMD Hub courses page with filters</p>
                     </div>  
-                    <p class="modal-link"> <a href="https://the-nat-attack.github.io/thedmdhub/">Continue to full site</a> </p>
+                    <p class="modal-link"> <a href="https://dmdhub.io">Continue to full site</a> </p>
                   </div>
               </div>
               
@@ -133,7 +187,7 @@
           <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>
+                <span class="close">X</span>
             </div>
             <div class="modal-container">
                 <div class="modal-body">
@@ -162,7 +216,7 @@
           <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>
+                <span class="close">X</span>
             </div>
             <div class="modal-container">
                 <div class="modal-body">
@@ -182,23 +236,35 @@
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, accusantium maxime dolore esse nisi dicta accusamus sequi ex ab consectetur recusandae rem consequatur. Minima, excepturi? Doloribus itaque consequatur ducimus dolorum. </p>
+    <section class="contact" id="contact">
+      <h3>Contact Me</h3>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, accusantium maxime dolore esse nisi dicta accusamus sequi 
+        ex ab consectetur recusandae rem consequatur. Minima, excepturi? Doloribus itaque consequatur ducimus dolorum. Lorem ipsum 
+        dolor sit amet consectetur adipisicing elit. Placeat, accusantium maxime dolore esse nisi dicta accusamus sequi 
+        ex ab consectetur recusandae rem consequatur. Minima, excepturi? Doloribus itaque consequatur ducimus dolorum.
+      
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sapien velit, rhoncus nec pharetra non, ultrices sit amet orci. Morbi elementum tristique purus vel pharetra. Suspendisse commodo velit sem, pretium ornare tellus dictum vitae. Pellentesque auctor iaculis urna nec tincidunt. Quisque id hendrerit est. Suspendisse potenti. In volutpat justo lobortis lacus molestie pretium. Vivamus dictum consectetur magna. Sed eu urna erat. Vestibulum feugiat mauris eget elit vestibulum, id mattis erat elementum. Aliquam suscipit id lorem quis fringilla. Sed eget venenatis odio. Morbi condimentum augue et lorem sagittis ultricies. Nullam porta risus sit amet suscipit maximus. Ut eget eros sem.
+
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer blandit, lorem vel tincidunt consectetur, ligula libero malesuada nibh, eu ullamcorper dolor lectus vel ex. Sed molestie elit a est convallis, efficitur finibus risus ornare. Aliquam ultricies libero viverra eleifend lobortis. Donec ac fringilla nulla, vel cursus nibh. Curabitur ligula magna, tincidunt sit amet ante ut, sagittis dictum libero. Aenean ornare posuere lacus id finibus. Curabitur auctor, odio sit amet sagittis fermentum, orci magna rhoncus sem, quis condimentum mauris ipsum vitae odio. Suspendisse ac cursus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas at lobortis ex. Etiam eget vulputate sapien. Phasellus tempor maximus faucibus.
+        
+        Nam pellentesque facilisis nibh, at pretium turpis bibendum et. Sed nec nisi mauris. Mauris gravida arcu in rutrum auctor. Sed tortor est, sollicitudin nec tempor et, consectetur quis neque. Integer eget est nulla. Sed posuere varius est, quis efficitur libero dapibus in. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit metus lorem, vulputate fringilla nulla varius eget. Nullam at congue eros. Vivamus a elit molestie mauris convallis vestibulum.</p>
     </section>
 
       <footer>
         <section class="footer">
           <div class="bottom-nav">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="">Contact</a>
+            <a id="page-scroll" href="#">Home</a>
+            <a id="page-scroll" href="#about-home">About</a>
+            <a id="page-scroll" href="#portfolio">Portfolio</a>
+            <a d="page-scroll" href="#contact">Contact</a>
+
+
           </div>
           <div class="socials">
-            <img src="./assets/linkedin.svg" alt="" class="linkedin">
+            <a href="https://www.linkedin.com/in/elizabeth-j-braun/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="linkedin" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a>
+            <a href="mailto:elizabeth.braun@uconn.edu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="email" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg></a>
           </div>
-          <p class="copyright">Made by Liz Braun ©2022</p>
+          <p class="copyright">Created by Liz Braun ©2022</p>
         </section>
       </footer>
 

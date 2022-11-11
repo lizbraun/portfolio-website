@@ -15,21 +15,56 @@
     <title>Liz Braun</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="top-site">
         <div class="container-fluid">
-          <div class="navbar-brand" href="">Navbar</div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-brand" href="#top-site"> <a href="#top-site"> <img src="./logo/small-logo-blue.png" alt="Logo" id="logo" ></a></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link nav-link-ltr" href="index.html">Home</a>
-              <a class="nav-link nav-link-ltr" href="index.html">About</a>
+              <a class="nav-link nav-link-ltr " href="index.html">Home</a>
+              <a class="nav-link nav-link-ltr" href="#">About</a>
               <a class="nav-link nav-link-ltr active" aria-current="page" href="portfolio.html">Portfolio</a>
             </div>
           </div>
         </div>
     </nav>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">Celine Is Awesome</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden active">
+                      <a href="#page-top"></a>
+                  </li>
+                  
+                  <li class="">
+                      <a class="page-scroll" href="#portfolio">Portfolio</a>
+                  </li>
+                  
+                  <li class="">
+                      <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
 
     <section class="portfolio-width">
     <div class="portfolio-intro ">
@@ -40,11 +75,11 @@
     <!-- Portfolio Section-->
     <section id="portfolio" class="container main-section">
       <div class="portfolio-subheader1">
-        <h3>Drawings</h3>
+        <h3>Web Design</h3>
       </div>
 
       <div class="portfolio__project-wrapper row">
-        <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio1">
+        <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="webdesign1">
             <div class="portfolio__project__preview">
               <img src="img/bike.jpg" alt="random quotes">
             </div>
@@ -89,8 +124,161 @@
         </div>
     </section>
 
+    <section id="portfolio" class="container main-section">
+        <div class="portfolio-subheader1">
+          <h3>UI/UX</h3>
+        </div>
+  
+        <div class="portfolio__project-wrapper row">
+          <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio1">
+              <div class="portfolio__project__preview">
+                <img src="img/bike.jpg" alt="random quotes">
+              </div>
+              <div class="portfolio__project__description">
+                <div class="info-wrapper">
+                  <h3 class="portfolio__project__name">Bicycle</h3>
+                </div>
+            </div>
+          </div>
+    
+          <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio2">
+              <div class="portfolio__project__preview">
+                <img src="img/toys.jpg" alt="weather app">
+              </div>
+              <div class="portfolio__project__description">
+                <div class="info-wrapper">
+                  <h3 class="portfolio__project__name">Childhood Toys</h3>
+                </div>
+              </div>
+          </div>
+    
+          <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio3">
+              <div class="portfolio__project__preview">
+                <img src="img/dreams.jpg" alt="wikipedia viewer">
+              </div>
+              <div class="portfolio__project__description">
+                <div class="info-wrapper">
+                  <h3 class="portfolio__project__name">In My Dreams</h3>
+                </div>
+              </div>
+          </div>
+    
+          <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio4">
+              <div class="portfolio__project__preview">
+                <img src="img/tools.jpg" alt="javascript calculator">
+              </div>
+              <div class="portfolio__project__description">
+                <div class="info-wrapper">
+                  <h3 class="portfolio__project__name">Tools</h3>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <section id="portfolio" class="container main-section">
+          <div class="portfolio-subheader1">
+            <h3>Typography</h3>
+          </div>
+    
+          <div class="portfolio__project-wrapper row">
+            <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio1">
+                <div class="portfolio__project__preview">
+                  <img src="img/bike.jpg" alt="random quotes">
+                </div>
+                <div class="portfolio__project__description">
+                  <div class="info-wrapper">
+                    <h3 class="portfolio__project__name">Bicycle</h3>
+                  </div>
+              </div>
+            </div>
+      
+            <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio2">
+                <div class="portfolio__project__preview">
+                  <img src="img/toys.jpg" alt="weather app">
+                </div>
+                <div class="portfolio__project__description">
+                  <div class="info-wrapper">
+                    <h3 class="portfolio__project__name">Childhood Toys</h3>
+                  </div>
+                </div>
+            </div>
+      
+            <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio3">
+                <div class="portfolio__project__preview">
+                  <img src="img/dreams.jpg" alt="wikipedia viewer">
+                </div>
+                <div class="portfolio__project__description">
+                  <div class="info-wrapper">
+                    <h3 class="portfolio__project__name">In My Dreams</h3>
+                  </div>
+                </div>
+            </div>
+      
+            <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio4">
+                <div class="portfolio__project__preview">
+                  <img src="img/tools.jpg" alt="javascript calculator">
+                </div>
+                <div class="portfolio__project__description">
+                  <div class="info-wrapper">
+                    <h3 class="portfolio__project__name">Tools</h3>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container main-section">
+            <div class="portfolio-subheader1">
+              <h3>Drawings</h3>
+            </div>
+      
+            <div class="portfolio__project-wrapper row">
+              <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio1">
+                  <div class="portfolio__project__preview">
+                    <img src="img/bike.jpg" alt="random quotes">
+                  </div>
+                  <div class="portfolio__project__description">
+                    <div class="info-wrapper">
+                      <h3 class="portfolio__project__name">Bicycle</h3>
+                    </div>
+                </div>
+              </div>
+        
+              <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio2">
+                  <div class="portfolio__project__preview">
+                    <img src="img/toys.jpg" alt="weather app">
+                  </div>
+                  <div class="portfolio__project__description">
+                    <div class="info-wrapper">
+                      <h3 class="portfolio__project__name">Childhood Toys</h3>
+                    </div>
+                  </div>
+              </div>
+        
+              <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio3">
+                  <div class="portfolio__project__preview">
+                    <img src="img/dreams.jpg" alt="wikipedia viewer">
+                  </div>
+                  <div class="portfolio__project__description">
+                    <div class="info-wrapper">
+                      <h3 class="portfolio__project__name">In My Dreams</h3>
+                    </div>
+                  </div>
+              </div>
+        
+              <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc" id="portfolio4">
+                  <div class="portfolio__project__preview">
+                    <img src="img/tools.jpg" alt="javascript calculator">
+                  </div>
+                  <div class="portfolio__project__description">
+                    <div class="info-wrapper">
+                      <h3 class="portfolio__project__name">Tools</h3>
+                    </div>
+                  </div>
+              </div>
+          </section>
+
     <section class="drawing-modal">
-    <!-- Modal 1 -->
+    <!-- Drawing Modal 1 -->
     <div id="drawingModal1" class="modal">
 
         <!-- Modal content -->
@@ -114,7 +302,7 @@
 
     </div>
 
-    <!-- Modal 2 -->
+    <!-- Drawing Modal 2 -->
     <div id="drawingModal2" class="modal">
 
         <!-- Modal content -->
@@ -133,7 +321,7 @@
         </div>
     </div>
 
-    <!-- Modal 3 -->
+    <!-- Drawing Modal 3 -->
     <div id="drawingModal3" class="modal">
 
         <!-- Modal content -->
@@ -156,6 +344,22 @@
 
     </section>
     </section>
+
+    <footer>
+        <section class="footer">
+          <div class="bottom-nav">
+            <a href="index.html">Home</a>
+            <a href="">About</a>
+            <a href="portfolio.html" aria-current="page">Portfolio</a>
+            <a href="">Contact</a>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/elizabeth-j-braun/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="linkedin" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a>
+            <a href="mailto:elizabeth.braun@uconn.edu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="email" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg></a>
+          </div>
+          <p class="copyright">Made by Liz Braun ©2022</p>
+        </section>
+      </footer>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
