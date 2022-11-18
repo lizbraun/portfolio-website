@@ -3,6 +3,14 @@ var datamap = new Map([
     [document.getElementById("portfolio1"), document.getElementById("homeModal1")],
     [document.getElementById("portfolio2"), document.getElementById("homeModal2")],
     [document.getElementById("portfolio3"), document.getElementById("homeModal3")],
+    [document.getElementById("portfolio4"), document.getElementById("homeModal4")],
+    [document.getElementById("portfolio5"), document.getElementById("homeModal5")],
+    [document.getElementById("portfolio6"), document.getElementById("homeModal6")],
+    [document.getElementById("portfolio7"), document.getElementById("homeModal7")],
+    [document.getElementById("portfolio8"), document.getElementById("homeModal8")],
+    [document.getElementById("portfolio9"), document.getElementById("homeModal9")],
+    [document.getElementById("portfolio10"), document.getElementById("homeModal10")]
+    
 
 ]);
 
